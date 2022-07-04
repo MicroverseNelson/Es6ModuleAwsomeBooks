@@ -11,7 +11,7 @@
   },
   "extends": ["airbnb-base"],
   "rules": {
-    "import/prefer-default-export": "off",
+    "import/prefer-default-export": 0,
     "import/no-default-export": "error"
 ,
     "no-shadow": "off",
