@@ -1,4 +1,5 @@
 # .gitignore
 node_modules/
-luxon.min.js
 .DS_Store
+.settings/
+node_modules/
