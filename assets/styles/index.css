@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1,
+p {
+  font-family: "Circular-Loom", sans-serif;
+}
+
 body {
   padding: 24px;
   width: 100vw;
-  font-family: Abel, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Circular-Loom", sans-serif;
   background-color: #f8f8f8;
 }
 
@@ -20,21 +23,12 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #094e37;
+  border: 1px solid #9b9e9d;
   padding: 8px;
 }
 
 .border-right {
   border-right: 1px solid #9b9e9d;
-}
-
-.logo {
-  text-decoration: none;
-  color: rgb(8, 71, 29);
-  padding: 5px;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 2px;
 }
 
 .navbar {
@@ -48,15 +42,21 @@ header {
   color: inherit;
 }
 
+.nav-link p {
+  padding: 0 8px;
+  color: inherit;
+}
+
 .datetime {
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .title {
   text-align: center;
   margin: 12px 0;
-  color: #1c5816;
+  color: #073f0a;
 }
 
 .container {
@@ -64,14 +64,14 @@ header {
   margin: 24px 0;
 }
 
-form {
+#form {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
 }
 
-form input {
+#form input {
   margin: 8px 0;
   padding: 12px;
   outline: none;
@@ -82,7 +82,7 @@ form input {
   justify-content: flex-end;
 }
 
-form button {
+#form button {
   margin: 8px 0;
   padding: 8px;
   width: 80px;
@@ -116,7 +116,7 @@ form button {
   border: none;
   text-decoration: none;
   color: white;
-  background-color: #0a580a;
+  background-color: #425cec;
   border-radius: 5px;
 }
 
@@ -130,6 +130,9 @@ form button {
 
 .contacts {
   display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
@@ -137,18 +140,64 @@ form button {
   bottom: 0;
   background-color: #f8f8f8;
   width: 100%;
-  padding: 8px;
+  padding: 12px;
 }
 
 .nav-link a:active {
-  color: #1baf48;
+  color: #425cec;
 }
 
 .nav-link a:hover {
-  color: #1bdfce;
-  font-size: 20px;
+  color: #425cec;
 }
 
 .nav-link a:focus {
-  color: #099b41;
+  color: #425cec;
+}
+
+.book {
+  display: none;
+}
+
+.books-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.book-item {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.book-item__info {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+}
+
+.book-item:nth-child(odd) {
+  background-color: #eaeaea;
+}
+
+button.removeFromShelfBtn {
+  padding: 20px;
+  padding: 5px;
+  width: 100px;
+  font-family: "Circular-Loom", sans-serif;
+  font-size: 16px;
+}
+
+p.book-item__title {
+  font-size: 18px;
+  font-family: "Circular-Loom", sans-serif;
+}
+
+p#response {
+  text-align: center;
 }
