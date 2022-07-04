@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import * as menu from './modules/menu.js';
 import { Book } from './modules/storage.js';
 import { DateTime } from './modules/luxon.min.js';
