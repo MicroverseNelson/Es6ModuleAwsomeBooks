@@ -20,7 +20,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #9b9e9d;
+  border: 1px solid #0bd491;
   padding: 8px;
 }
 
@@ -30,10 +30,11 @@ header {
 
 .logo {
   text-decoration: none;
-  color: white;
-  background: linear-gradient(to top, #fff000 0%, #000fff 100%);
-  border-radius: 5px;
+  color: green;
   padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .navbar {
@@ -45,6 +46,9 @@ header {
   text-decoration: none;
   padding: 0 8px;
   color: inherit;
+  color:#05661d;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .datetime {
@@ -55,7 +59,7 @@ header {
 .title {
   text-align: center;
   margin: 12px 0;
-  color: #425cec;
+  color: #096131;
 }
 
 .container {
@@ -114,8 +118,8 @@ form button {
   padding: 5px;
   border: none;
   text-decoration: none;
-  color: white;
-  background-color: #425cec;
+  color: rgb(4, 4, 10);
+  background-color: #42ecde;
   border-radius: 5px;
 }
 
@@ -140,13 +144,13 @@ form button {
 }
 
 .nav-link a:active {
-  color: #425cec;
+  color: #10eee3;
 }
 
 .nav-link a:hover {
-  color: #425cec;
+  color: #42ecc1;
 }
 
 .nav-link a:focus {
-  color: #425cec;
+  color: #73f537;
 }
