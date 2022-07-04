@@ -1,4 +1,4 @@
-import {navigationMenu} from './modules/menu.js';
+import * as menu from './modules/menu.js';
 import { Book } from './modules/storage.js';
 import { DateTime } from './modules/luxon.min.js';
 
