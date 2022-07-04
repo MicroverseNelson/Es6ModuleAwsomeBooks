@@ -1,4 +1,4 @@
-const navigationMenu = () => {
+export const navigationMenu = () => {
   const listSection = document.querySelector('.booklist');
   const addSection = document.querySelector('.addnew');
   const contactSection = document.querySelector('.contacts');
@@ -30,4 +30,4 @@ const navigationMenu = () => {
     });
   });
 };
-export { navigationMenu };
+export default { navigationMenu };
